@@ -1,0 +1,36 @@
+name: food_delivery_app_ui
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  device_preview: ^1.3.1
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.3.0
+  go_router: ^17.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+  
+  fonts:
+    - family: sen
+      fonts: 
+        - asset: assets/fonts/sen_bold.ttf
+        - asset: assets/fonts/sen_extra_bold.ttf
+        - asset: assets/fonts/sen_medium.ttf
+        - asset: assets/fonts/sen_regular.ttf
+        - asset: assets/fonts/sen_semi_bold.ttf
+
+
