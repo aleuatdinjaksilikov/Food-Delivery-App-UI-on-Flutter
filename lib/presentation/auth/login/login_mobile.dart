@@ -22,47 +22,29 @@ class _LoginMobileState extends State<LoginMobile> {
         children: [
           Expanded(
             flex: 3,
-            child: Stack(
-              children: [
-                Center(
-                  child: Column(
-                    mainAxisAlignment: .center,
-                    children: [
-                      const Text(
-                        "Log In",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                          fontFamily: "sen",
-                          fontWeight: .bold,
-                        ),
-                      ),
-                      const Text(
-                        "Please sign in to your existing account",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontFamily: "sen",
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-
-                Positioned(
-                  top: 10,
-                  left: 10,
-                  child: InkWell(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.white
-                      ),
-                      child: Icon(Icons.arrow_back_ios),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: .center,
+                children: [
+                  const Text(
+                    "Log In",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontFamily: "sen",
+                      fontWeight: .bold,
                     ),
-                  ) 
-                )
-              ],
+                  ),
+                  const Text(
+                    "Please sign in to your existing account",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontFamily: "sen",
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           Expanded(
