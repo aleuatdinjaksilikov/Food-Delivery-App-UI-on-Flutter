@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/core/navigation/routes.dart';
 import 'package:food_delivery_app_ui/shared/app_button.dart';
-import 'package:food_delivery_app_ui/shared/app_circle_container.dart';
 import 'package:food_delivery_app_ui/shared/app_field.dart';
 import 'package:go_router/go_router.dart';
 
@@ -47,6 +45,7 @@ class SignUpMobile extends StatelessWidget {
                   top: 50,
                   left: 20,
                   child: InkWell(
+                    customBorder: CircleBorder(),
                     onTap: () {
                       context.pop();
                     },
@@ -62,45 +61,48 @@ class SignUpMobile extends StatelessWidget {
           Expanded(
             flex: 7,
             child: SingleChildScrollView(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
+              child: SizedBox(
+                height: MediaQuery.of(context).size.height,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30),
+                    ),
+                    color: Colors.white,
                   ),
-                  color: Colors.white,
-                ),
-                child: Padding(
-                  padding: const EdgeInsetsGeometry.all(16),
-                  child: Column(
-                    children: [
-                      AppField(
-                        header: "NAME",
-                        hintText: "John Doe",
-                        isPassword: false,
-                      ),
-                      SizedBox(height: 15),
-                      AppField(
-                        header: "EMAIL",
-                        hintText: "example@gmail.com",
-                        isPassword: false,
-                      ),
-                      SizedBox(height: 15),
-                      AppField(
-                        header: "PASSWORD",
-                        hintText: "*****",
-                        isPassword: true,
-                      ),
-                      SizedBox(height: 15),
-                      AppField(
-                        header: "RE-TYPE PASSWORD",
-                        hintText: "*****",
-                        isPassword: true,
-                      ),
-                      SizedBox(height: 15),
-                      AppButton(btnText: "SIGN UP", onTap: () {}),
-                      SizedBox(height: 15),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsetsGeometry.all(16),
+                    child: Column(
+                      children: [
+                        AppField(
+                          header: "NAME",
+                          hintText: "John Doe",
+                          isPassword: false,
+                        ),
+                        SizedBox(height: 15),
+                        AppField(
+                          header: "EMAIL",
+                          hintText: "example@gmail.com",
+                          isPassword: false,
+                        ),
+                        SizedBox(height: 15),
+                        AppField(
+                          header: "PASSWORD",
+                          hintText: "*****",
+                          isPassword: true,
+                        ),
+                        SizedBox(height: 15),
+                        AppField(
+                          header: "RE-TYPE PASSWORD",
+                          hintText: "*****",
+                          isPassword: true,
+                        ),
+                        SizedBox(height: 15),
+                        AppButton(btnText: "SIGN UP", onTap: () {}),
+                        SizedBox(height: 15),
+                      ],
+                    ),
                   ),
                 ),
               ),

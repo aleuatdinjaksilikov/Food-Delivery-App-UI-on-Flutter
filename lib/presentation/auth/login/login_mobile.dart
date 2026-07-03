@@ -50,66 +50,69 @@ class _LoginMobileState extends State<LoginMobile> {
           Expanded(
             flex: 7,
             child: SingleChildScrollView(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
+              child: SizedBox(
+                height: MediaQuery.of(context).size.height,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30),
+                    ),
+                    color: Colors.white,
                   ),
-                  color: Colors.white,
-                ),
-                child: Padding(
-                  padding: const EdgeInsetsGeometry.all(16),
-                  child: Column(
-                    children: [
-                      AppField(
-                        header: "EMAIL",
-                        hintText: "example@gmail.com",
-                        isPassword: false,
-                      ),
-                      SizedBox(height: 15),
-                      AppField(
-                        header: "PASSWORD",
-                        hintText: "******",
-                        isPassword: true,
-                      ),
-                      SizedBox(height: 15),
-                      rememberMeSection(),
-                      SizedBox(height: 15),
-                      AppButton(btnText: "LOG IN", onTap: () {}),
-                      SizedBox(height: 15),
-                      haveAnAccountSection(),
-                      SizedBox(height: 25),
-                      Column(
-                        children: [
-                          Text("OR", style: TextStyle(fontFamily: "sen")),
-                          SizedBox(height: 15),
-                          Row(
-                            mainAxisAlignment: .spaceEvenly,
-                            children: [
-                              AppCircleContainer(
-                                onTap: () {},
-                                bgColor: Color(0xFF395998),
-                                radius: 35,
-                                icon: Icons.facebook,
-                              ),
-                              AppCircleContainer(
-                                onTap: () {},
-                                bgColor: Color(0xFF169CE8),
-                                radius: 35,
-                                icon: Icons.telegram,
-                              ),
-                              AppCircleContainer(
-                                onTap: () {},
-                                bgColor: Color(0xFF1B1F2F),
-                                radius: 35,
-                                icon: Icons.apple,
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsetsGeometry.all(16),
+                    child: Column(
+                      children: [
+                        AppField(
+                          header: "EMAIL",
+                          hintText: "example@gmail.com",
+                          isPassword: false,
+                        ),
+                        SizedBox(height: 15),
+                        AppField(
+                          header: "PASSWORD",
+                          hintText: "******",
+                          isPassword: true,
+                        ),
+                        SizedBox(height: 15),
+                        rememberMeSection(),
+                        SizedBox(height: 15),
+                        AppButton(btnText: "LOG IN", onTap: () {context.toAccessLocation();}),
+                        SizedBox(height: 15),
+                        haveAnAccountSection(),
+                        SizedBox(height: 25),
+                        Column(
+                          children: [
+                            Text("OR", style: TextStyle(fontFamily: "sen")),
+                            SizedBox(height: 15),
+                            Row(
+                              mainAxisAlignment: .spaceEvenly,
+                              children: [
+                                AppCircleContainer(
+                                  onTap: () {},
+                                  bgColor: Color(0xFF395998),
+                                  radius: 35,
+                                  icon: Icons.facebook,
+                                ),
+                                AppCircleContainer(
+                                  onTap: () {},
+                                  bgColor: Color(0xFF169CE8),
+                                  radius: 35,
+                                  icon: Icons.telegram,
+                                ),
+                                AppCircleContainer(
+                                  onTap: () {},
+                                  bgColor: Color(0xFF1B1F2F),
+                                  radius: 35,
+                                  icon: Icons.apple,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -170,7 +173,7 @@ class _LoginMobileState extends State<LoginMobile> {
           ],
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {context.toForgotPassword();},
           child: Text(
             "Forgot Password",
             style: TextStyle(fontFamily: "sen", color: Color(0xFFFF7622)),

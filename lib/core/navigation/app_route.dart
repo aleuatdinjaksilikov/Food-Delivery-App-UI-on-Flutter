@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/core/navigation/routes.dart';
+import 'package:food_delivery_app_ui/presentation/auth/forgotPassword/forgot_password_page.dart';
+import 'package:food_delivery_app_ui/presentation/auth/locationAccess/location_access_page.dart';
 import 'package:food_delivery_app_ui/presentation/auth/login/login_page.dart';
+import 'package:food_delivery_app_ui/presentation/auth/otpVerification/otp_verification_page.dart';
 import 'package:food_delivery_app_ui/presentation/auth/signUp/sign_up_page.dart';
 import 'package:food_delivery_app_ui/presentation/home/home_page.dart';
 import 'package:food_delivery_app_ui/presentation/onBoarding/on_boarding_page.dart';
@@ -37,6 +40,27 @@ final GoRouter router = GoRouter(
           path: Routes.signUpPage,
           builder: (BuildContext context, GoRouterState state) {
             return SignUpPage();
+          },
+        ),
+
+        GoRoute(
+          path: Routes.forgotPasswordPage,
+          builder: (BuildContext context, GoRouterState state) {
+            return ForgotPasswordPage();
+          },
+        ),
+
+        GoRoute(
+          path: Routes.otpVerificationPage,
+          builder: (BuildContext context, GoRouterState state) {
+            return OtpVerificationPage();
+          },
+        ),
+
+        GoRoute(
+          path: Routes.accessLocationPage,
+          builder: (BuildContext context, GoRouterState state) {
+            return LocationAccessPage();
           },
         ),
       ],

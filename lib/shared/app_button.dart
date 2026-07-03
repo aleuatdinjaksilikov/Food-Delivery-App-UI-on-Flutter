@@ -3,11 +3,15 @@ import 'package:flutter/material.dart';
 class AppButton extends StatelessWidget {
   final String btnText;
   final VoidCallback onTap;
-  const AppButton({super.key, required this.btnText, required this.onTap});
+  const AppButton({
+    super.key,
+    required this.btnText,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return InkWell( 
+    return InkWell(
       borderRadius: BorderRadius.circular(12.0),
       onTap: onTap,
       child: Container(
@@ -17,7 +21,10 @@ class AppButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(12.0),
         ),
         child: Center(
-          child: Text(btnText,style: TextStyle(color: Colors.white,fontFamily: "sen"),),
+          child: Text(
+            btnText,
+            style: TextStyle(color: Colors.white, fontFamily: "sen"),
+          ),
         ),
       ),
     );

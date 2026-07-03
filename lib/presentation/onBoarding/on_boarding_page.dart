@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app_ui/core/navigation/navigation_extension.dart';
-import 'package:food_delivery_app_ui/core/navigation/routes.dart';
 import 'package:food_delivery_app_ui/presentation/onBoarding/on_boarding_content.dart';
 import 'package:food_delivery_app_ui/presentation/onBoarding/size_config.dart';
 import 'package:food_delivery_app_ui/shared/app_button.dart';
-import 'package:go_router/go_router.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});

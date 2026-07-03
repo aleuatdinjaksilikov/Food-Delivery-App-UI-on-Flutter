@@ -7,4 +7,7 @@ extension NavigationExtension on BuildContext{
   void toHome() => go(Routes.homePage);
   void toSignUp() => push(Routes.signUpPage);
   void toOnboarding() => go(Routes.onBoarding);
+  void toForgotPassword() => push(Routes.forgotPasswordPage);
+  void toOtpVerification() => push(Routes.otpVerificationPage);
+  void toAccessLocation() => go(Routes.accessLocationPage);
 }
