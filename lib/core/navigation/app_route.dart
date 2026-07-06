@@ -7,6 +7,7 @@ import 'package:food_delivery_app_ui/presentation/auth/otpVerification/otp_verif
 import 'package:food_delivery_app_ui/presentation/auth/signUp/sign_up_page.dart';
 import 'package:food_delivery_app_ui/presentation/home/home_page.dart';
 import 'package:food_delivery_app_ui/presentation/onBoarding/on_boarding_page.dart';
+import 'package:food_delivery_app_ui/presentation/search/search_page.dart';
 import 'package:food_delivery_app_ui/presentation/splash/splash_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -63,6 +64,14 @@ final GoRouter router = GoRouter(
             return LocationAccessPage();
           },
         ),
+
+        GoRoute(
+          path: Routes.searchPage,
+          builder: (BuildContext context, GoRouterState state) {
+            return SearchPage();
+          },
+        ),
+
       ],
     ),
   ],

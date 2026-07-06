@@ -10,4 +10,5 @@ extension NavigationExtension on BuildContext{
   void toForgotPassword() => push(Routes.forgotPasswordPage);
   void toOtpVerification() => push(Routes.otpVerificationPage);
   void toAccessLocation() => go(Routes.accessLocationPage);
+  void toSearch() => push(Routes.searchPage);
 }

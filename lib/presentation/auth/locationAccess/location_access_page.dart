@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app_ui/core/navigation/navigation_extension.dart';
 import 'package:food_delivery_app_ui/shared/app_button.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -32,7 +33,7 @@ class LocationAccessPage extends StatelessWidget {
               onTap: () async {
                 await requestLocationPermission();
                 if(!context.mounted) return;
-                
+                context.toHome();
               },
             ),
             SizedBox(height: 25),

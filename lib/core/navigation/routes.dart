@@ -3,9 +3,9 @@ class Routes{
  static String onBoarding = "/onBoarding"; 
  static String homePage = "/home";
  static String loginPage = "/login";
- static String signUpPage = "/signUpPage";    
- static String forgotPasswordPage = "/forgotPasswordPage";    
- static String otpVerificationPage = "/otpVerificationPage";    
- static String accessLocationPage = "/accessLocationPage";
-
+ static String signUpPage = "/signUp";    
+ static String forgotPasswordPage = "/forgotPassword";    
+ static String otpVerificationPage = "/otpVerification";    
+ static String accessLocationPage = "/accessLocation";
+ static String searchPage = "/search";
 }
