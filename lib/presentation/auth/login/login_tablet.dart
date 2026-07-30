@@ -112,7 +112,7 @@ class _LoginTabletState extends State<LoginTablet> {
                       Text("Don’t have an account?",style: TextStyle(fontFamily: "sen"),),
                       SizedBox(width: 5,),
                       TextButton(onPressed: (){
-                        context.toSignUp();
+                        context.pushToSignUp();
                       }, child: Text("SIGN UP",style: TextStyle(fontFamily: "sen",color: Color(0xFFFF7622),fontWeight: .bold),))
                     ],
                   );

@@ -19,6 +19,7 @@ class AppDimensions {
   static const double radiusS = 8;
   static const double radiusM = 12;
   static const double radiusL = 16;
+  static const double radiusXL = 24;
   static const double radiusCircle = 100;
 
   // ---- Размеры конкретных элементов ----

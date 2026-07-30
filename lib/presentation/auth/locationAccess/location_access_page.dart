@@ -33,7 +33,7 @@ class LocationAccessPage extends StatelessWidget {
               onTap: () async {
                 await requestLocationPermission();
                 if(!context.mounted) return;
-                context.toHome();
+                context.goToHome();
               },
             ),
             SizedBox(height: 25),

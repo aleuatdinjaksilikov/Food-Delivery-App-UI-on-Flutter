@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app_ui/core/navigation/navigation_extension.dart';
-import 'package:food_delivery_app_ui/presentation/onBoarding/on_boarding_content.dart';
-import 'package:food_delivery_app_ui/presentation/onBoarding/size_config.dart';
+import 'package:food_delivery_app_ui/presentation/on_boarding/on_boarding_content.dart';
+import 'package:food_delivery_app_ui/presentation/on_boarding/size_config.dart';
 import 'package:food_delivery_app_ui/shared/app_button.dart';
 
 class OnBoardingPage extends StatefulWidget {
@@ -113,7 +113,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   _currentPage + 1 == onBoardingContentList.length
                       ? Padding(
                           padding: const EdgeInsets.all(30),
-                          child: AppButton(btnText: "Start", onTap: (){context.toLogin();}),
+                          child: AppButton(btnText: "Start", onTap: (){context.goToLogin();}),
                           // child: ElevatedButton(
                           //   onPressed: () {},
                           //   style: ElevatedButton.styleFrom(

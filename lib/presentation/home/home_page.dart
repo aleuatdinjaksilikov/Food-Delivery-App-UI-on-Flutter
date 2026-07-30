@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/core/constants/app_dimensions.dart';
 import 'package:food_delivery_app_ui/core/navigation/navigation_extension.dart';
-import 'package:food_delivery_app_ui/presentation/home/shared/category_card.dart';
-import 'package:food_delivery_app_ui/presentation/home/shared/restaurant_card.dart';
+import 'package:food_delivery_app_ui/presentation/home/widgets/category_card.dart';
+import 'package:food_delivery_app_ui/presentation/home/widgets/restaurant_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -114,7 +114,9 @@ class _HomePageState extends State<HomePage> {
               ),
               Spacer(),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  context.pushToFoodDetail();
+                },
                 child: Row(
                   children: [
                     Text(
@@ -150,7 +152,7 @@ class _HomePageState extends State<HomePage> {
     return SliverToBoxAdapter(
       child: TextFormField(
         readOnly: true,
-        onTap: () => context.toSearch(),
+        onTap: () => context.pushToSearch(),
         decoration: InputDecoration(
           prefixIcon: Icon(Icons.search_rounded, color: Color(0xFFA0A5BA)),
           hintText: "Search dishes,restaurants",
@@ -180,7 +182,7 @@ class _HomePageState extends State<HomePage> {
           SizedBox(width: 15),
           Column(
             crossAxisAlignment: .start,
-            children: [Text("Deliver to"), Text("It Park Karakalpakstan")],
+            children: [Text("Deliver to",style: TextStyle(fontWeight: .bold,color: Color(0xFFFC6E2A)),), Text("It Park Karakalpakstan")],
           ),
           Spacer(),
           Container(

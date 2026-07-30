@@ -3,12 +3,13 @@ import 'package:food_delivery_app_ui/core/navigation/routes.dart';
 import 'package:go_router/go_router.dart';
 
 extension NavigationExtension on BuildContext{
-  void toLogin() => go(Routes.loginPage);
-  void toHome() => go(Routes.homePage);
-  void toSignUp() => push(Routes.signUpPage);
-  void toOnboarding() => go(Routes.onBoarding);
-  void toForgotPassword() => push(Routes.forgotPasswordPage);
-  void toOtpVerification() => push(Routes.otpVerificationPage);
-  void toAccessLocation() => go(Routes.accessLocationPage);
-  void toSearch() => push(Routes.searchPage);
+  void goToLogin() => go(Routes.loginPage);
+  void goToHome() => go(Routes.homePage);
+  void pushToSignUp() => push(Routes.signUpPage);
+  void goToOnboarding() => go(Routes.onBoarding);
+  void pushToForgotPassword() => push(Routes.forgotPasswordPage);
+  void pushToOtpVerification() => push(Routes.otpVerificationPage);
+  void goToAccessLocation() => go(Routes.accessLocationPage);
+  void pushToSearch() => push(Routes.searchPage);
+  void pushToFoodDetail() => push(Routes.foodDetailPage);
 }

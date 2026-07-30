@@ -78,7 +78,7 @@ class _LoginMobileState extends State<LoginMobile> {
                         SizedBox(height: 15),
                         rememberMeSection(),
                         SizedBox(height: 15),
-                        AppButton(btnText: "LOG IN", onTap: () {context.toAccessLocation();}),
+                        AppButton(btnText: "LOG IN", onTap: () {context.goToAccessLocation();}),
                         SizedBox(height: 15),
                         haveAnAccountSection(),
                         SizedBox(height: 25),
@@ -131,7 +131,7 @@ class _LoginMobileState extends State<LoginMobile> {
         SizedBox(width: 5),
         TextButton(
           onPressed: () {
-            context.toSignUp();
+            context.pushToSignUp();
           },
           child: Text(
             "SIGN UP",
@@ -173,7 +173,7 @@ class _LoginMobileState extends State<LoginMobile> {
           ],
         ),
         TextButton(
-          onPressed: () {context.toForgotPassword();},
+          onPressed: () {context.pushToForgotPassword();},
           child: Text(
             "Forgot Password",
             style: TextStyle(fontFamily: "sen", color: Color(0xFFFF7622)),

@@ -8,4 +8,5 @@ class Routes{
  static String otpVerificationPage = "/otpVerification";    
  static String accessLocationPage = "/accessLocation";
  static String searchPage = "/search";
+ static String foodDetailPage = "/foodDetail";
 }

@@ -80,7 +80,7 @@ class ForgotPasswordPage extends StatelessWidget {
                     ),
                     SizedBox(height: 25),
                     AppButton(btnText: "SEND CODE", onTap: () {
-                      context.toOtpVerification();
+                      context.pushToOtpVerification();
                     }),
                   ],
                 ),
