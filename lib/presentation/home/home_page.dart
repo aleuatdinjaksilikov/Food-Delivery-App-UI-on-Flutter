@@ -85,7 +85,9 @@ class _HomePageState extends State<HomePage> {
           ),
           Spacer(),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              context.pushToRestaurant();
+            },
             child: Row(
               children: [
                 Text(

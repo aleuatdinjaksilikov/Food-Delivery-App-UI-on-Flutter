@@ -12,4 +12,5 @@ extension NavigationExtension on BuildContext{
   void goToAccessLocation() => go(Routes.accessLocationPage);
   void pushToSearch() => push(Routes.searchPage);
   void pushToFoodDetail() => push(Routes.foodDetailPage);
+  void pushToRestaurant() => push(Routes.restaurantPage);
 }

@@ -16,7 +16,8 @@ final GoRouter router = GoRouter(
         ...splashRoutes,
         ...authRoutes,
         ...searchRoutes,
-        ...foodDetailRoutes
+        ...foodDetailRoutes,
+        ...restaurantRoutes,
       ],
     ),
   ],

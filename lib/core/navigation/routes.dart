@@ -9,4 +9,5 @@ class Routes{
  static String accessLocationPage = "/accessLocation";
  static String searchPage = "/search";
  static String foodDetailPage = "/foodDetail";
+ static String restaurantPage = "/restaurant";
 }

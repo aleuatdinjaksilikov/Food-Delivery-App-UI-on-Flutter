@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:food_delivery_app_ui/core/constants/app_colors.dart';
 import 'package:food_delivery_app_ui/core/constants/app_dimensions.dart';
+import 'package:food_delivery_app_ui/shared/circle_button.dart';
 import 'package:food_delivery_app_ui/shared/icon_text.dart';
 
 class FoodDetailPage extends StatelessWidget {
@@ -82,7 +83,7 @@ class FoodDetailPage extends StatelessWidget {
           Positioned(
             top: 50,
             left: 16,
-            child: _circleButton(
+            child: CircleButton(
               icon: Icons.arrow_back_ios_new_rounded,
               onTap: () => Navigator.pop(context),
             ),
@@ -91,7 +92,7 @@ class FoodDetailPage extends StatelessWidget {
           Positioned(
             top: 50,
             right: 16,
-            child: _circleButton(
+            child: CircleButton(
               icon: Icons.favorite_rounded,
               iconColor: AppColors.primary,
               onTap: () {},
@@ -232,34 +233,6 @@ class FoodDetailPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _circleButton({
-    required IconData icon,
-    Color iconColor = Colors.black,
-    required VoidCallback onTap,
-  }) {
-    return InkWell(
-      onTap: onTap,
-      customBorder: const CircleBorder(),
-      child: Container(
-        height: AppDimensions.iconButtonSize,
-        width: AppDimensions.iconButtonSize,
-        decoration: const BoxDecoration(
-          color: AppColors.white,
-          shape: BoxShape.circle,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black12,
-              blurRadius: 8,
-              offset: Offset(0, 2),
-            ),
-          ],
-        ),
-        alignment: Alignment.center,
-        child: Icon(icon, size: AppDimensions.iconM, color: iconColor),
       ),
     );
   }
