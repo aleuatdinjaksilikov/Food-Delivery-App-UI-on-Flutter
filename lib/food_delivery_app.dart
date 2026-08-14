@@ -1,6 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/core/navigation/app_route.dart';
+import 'package:food_delivery_app_ui/navigation/app_route.dart';
 
 class FoodDeliveryApp extends StatelessWidget {
   const FoodDeliveryApp({super.key});

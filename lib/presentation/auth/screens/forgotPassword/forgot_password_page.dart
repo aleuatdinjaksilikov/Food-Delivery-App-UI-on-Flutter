@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/core/navigation/navigation_extension.dart';
-import 'package:food_delivery_app_ui/shared/app_button.dart';
-import 'package:food_delivery_app_ui/shared/app_field.dart';
+import 'package:food_delivery_app_ui/navigation/navigation_extension.dart';
+import 'package:food_delivery_app_ui/core/widgets/app_button.dart';
+import 'package:food_delivery_app_ui/core/widgets/app_field.dart';
 import 'package:go_router/go_router.dart';
 
 class ForgotPasswordPage extends StatelessWidget {

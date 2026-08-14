@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/presentation/auth/login/login_desktop.dart';
-import 'package:food_delivery_app_ui/presentation/auth/login/login_mobile.dart';
-import 'package:food_delivery_app_ui/presentation/auth/login/login_tablet.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/login/login_desktop.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/login/login_mobile.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/login/login_tablet.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

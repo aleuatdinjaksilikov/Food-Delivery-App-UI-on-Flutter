@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/core/constants/app_colors.dart';
 import 'package:food_delivery_app_ui/core/constants/app_dimensions.dart';
-import 'package:food_delivery_app_ui/presentation/data/models/food_model.dart';
-import 'package:food_delivery_app_ui/shared/category_selector.dart';
-import 'package:food_delivery_app_ui/shared/circle_button.dart';
-import 'package:food_delivery_app_ui/shared/food_list.dart';
-import 'package:food_delivery_app_ui/shared/food_list_item.dart';
-import 'package:food_delivery_app_ui/shared/icon_text.dart';
+import 'package:food_delivery_app_ui/core/models/food_model.dart';
+import 'package:food_delivery_app_ui/core/widgets/category_selector.dart';
+import 'package:food_delivery_app_ui/core/widgets/circle_button.dart';
+import 'package:food_delivery_app_ui/core/widgets/food_list_item.dart';
+import 'package:food_delivery_app_ui/core/widgets/icon_text.dart';
 
 class RestaurantPage extends StatefulWidget {
   const RestaurantPage({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/presentation/data/models/food_model.dart';
-import 'package:food_delivery_app_ui/shared/food_list_item.dart';
+import 'package:food_delivery_app_ui/core/models/food_model.dart';
+import 'package:food_delivery_app_ui/core/widgets/food_list_item.dart';
 
 class FoodList extends StatelessWidget {
   final List<FoodModel> items;

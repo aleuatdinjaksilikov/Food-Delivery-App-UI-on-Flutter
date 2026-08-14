@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/core/navigation/routes.dart';
+import 'package:food_delivery_app_ui/navigation/routes.dart';
 import 'package:food_delivery_app_ui/presentation/home/home_page.dart';
 import 'package:food_delivery_app_ui/presentation/search/search_page.dart';
 import 'package:go_router/go_router.dart';

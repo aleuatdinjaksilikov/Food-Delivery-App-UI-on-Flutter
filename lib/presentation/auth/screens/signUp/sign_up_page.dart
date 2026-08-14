@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/presentation/auth/signUp/sign_up_desktop.dart';
-import 'package:food_delivery_app_ui/presentation/auth/signUp/sign_up_mobile.dart';
-import 'package:food_delivery_app_ui/presentation/auth/signUp/sign_up_tablet.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/signUp/sign_up_desktop.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/signUp/sign_up_mobile.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/signUp/sign_up_tablet.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});

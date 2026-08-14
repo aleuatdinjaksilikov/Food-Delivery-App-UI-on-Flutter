@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:food_delivery_app_ui/core/constants/app_colors.dart';
 import 'package:food_delivery_app_ui/core/constants/app_dimensions.dart';
-import 'package:food_delivery_app_ui/shared/circle_button.dart';
-import 'package:food_delivery_app_ui/shared/icon_text.dart';
+import 'package:food_delivery_app_ui/core/widgets/circle_button.dart';
+import 'package:food_delivery_app_ui/core/widgets/icon_text.dart';
 
 class FoodDetailPage extends StatelessWidget {
   const FoodDetailPage({super.key});

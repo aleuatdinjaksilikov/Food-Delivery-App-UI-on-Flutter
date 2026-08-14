@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/core/constants/app_dimensions.dart';
-import 'package:food_delivery_app_ui/core/navigation/navigation_extension.dart';
+import 'package:food_delivery_app_ui/navigation/navigation_extension.dart';
 import 'package:food_delivery_app_ui/presentation/home/widgets/category_card.dart';
 import 'package:food_delivery_app_ui/presentation/home/widgets/restaurant_card.dart';
 

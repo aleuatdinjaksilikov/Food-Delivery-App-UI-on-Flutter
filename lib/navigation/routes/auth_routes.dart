@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app_ui/core/navigation/routes.dart';
-import 'package:food_delivery_app_ui/presentation/auth/forgotPassword/forgot_password_page.dart';
-import 'package:food_delivery_app_ui/presentation/auth/login/login_page.dart';
-import 'package:food_delivery_app_ui/presentation/auth/otpVerification/otp_verification_page.dart';
-import 'package:food_delivery_app_ui/presentation/auth/signUp/sign_up_page.dart';
+import 'package:food_delivery_app_ui/navigation/routes.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/forgotPassword/forgot_password_page.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/login/login_page.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/otpVerification/otp_verification_page.dart';
+import 'package:food_delivery_app_ui/presentation/auth/screens/signUp/sign_up_page.dart';
 import 'package:go_router/go_router.dart';
 
 final List<RouteBase> authRoutes = [
