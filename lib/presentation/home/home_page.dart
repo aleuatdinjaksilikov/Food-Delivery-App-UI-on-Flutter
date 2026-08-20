@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/core/constants/app_dimensions.dart';
 import 'package:food_delivery_app_ui/navigation/navigation_extension.dart';
 import 'package:food_delivery_app_ui/presentation/home/widgets/category_card.dart';
+import 'package:food_delivery_app_ui/presentation/home/widgets/drawer_menu.dart';
 import 'package:food_delivery_app_ui/presentation/home/widgets/restaurant_card.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,31 +18,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Text('Drawer Header'),
-            ),
-            ListTile(
-              title: const Text('Item 1'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-            ListTile(
-              title: const Text('Item 2'),
-              onTap: () {
-                // Update the state of the app.
-                // ...
-              },
-            ),
-          ],
-        ),
-      ),
+      drawer: DrawerMenu(),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),

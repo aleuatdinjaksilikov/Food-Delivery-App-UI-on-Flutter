@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app_ui/core/theme/app_theme.dart';
 import 'package:food_delivery_app_ui/navigation/app_route.dart';
 
 class FoodDeliveryApp extends StatelessWidget {
@@ -12,9 +13,7 @@ class FoodDeliveryApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       routerConfig: router,
-      theme: ThemeData(
-        brightness: .light
-      ),
+      theme: lightTheme,
     );
   }
 }
